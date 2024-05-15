@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | Flowers</title>
+  <link rel="icon" href="flower.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="intro">
+    <div class="container intro-content">
+      <h1>Flowers</h1>
+      <p>Explore the varieties of flowers</p>
+      <a href="#pic" class="btn btn-outline-dark btn-lg">Explore</a>
+    </div>
+  </div>
+
+  <header>
+    <h1>Flowers ♡</h1>
+  </header>
+
+  <section id="pic" class="gallery">
+
+    <div class="grid-container">
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(0)">
+          <img src="dt.jpg" alt="Daffodils">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(1)">
+          <img src="pt.jpg" alt="Peony">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(2)">
+          <img src="at.jpg" alt="Aster">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(3)">
+          <img src="clt.jpg" alt="Lily">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(4)">
+          <img src="ant.jpg" alt="Anemone">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(5)">
+          <img src="sft.jpg" alt="Sunflower">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(6)">
+          <img src="dst.jpg" alt="Daisy">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(7)">
+          <img src="ppt.jpg" alt="Poppy">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(8)">
+          <img src="prt.jpg" alt="Pink Rose">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(9)">
+          <img src="ct.jpg" alt="Camellia">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(10)">
+          <img src="lt.jpg" alt="Lavender">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="thumbnail" onclick="openModal(11)">
+          <img src="tt.jpg" alt="Tulip">
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImg" src="" alt="Modal Image">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+        <div id="caption"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; Flowers to your heart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

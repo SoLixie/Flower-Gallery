@@ -1,0 +1,170 @@
+/* No changes needed here */
+body {
+  background-image: url('bg.jpg');
+}
+
+/* Welcome */
+.intro {
+  padding: 75px 0;
+  text-align: center;
+  color: #000000;
+  height: 100vh;
+}
+
+.intro-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* No changes needed here */
+.intro-content h1 {
+  font-size: 20vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.intro-content p {
+  font-size: 8vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.intro-content .btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.intro-content .btn:hover {
+  background-color: #c08bb0;
+}
+
+/* Gallery */
+
+header {
+  font-size: 5vh;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+}
+
+.grid-container {
+  width: calc(75% - 2 * 20px); /* Adjust width as needed for responsiveness */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+  grid-gap: 20px; /* Spacing between grids */
+  margin: 0 auto; /* Center the container horizontally */
+  grid-auto-rows: minmax(min-content, 1fr); /* Set min and max heights for rows */
+}
+
+.grid {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail {
+  margin: 10px; /* Add margin for separation */
+  cursor: pointer;
+}
+
+/* Ensure all thumbnail images have a fixed size */
+.thumbnail img {
+  width: 100%; /* Set width to 100% of parent container */
+  height: 200px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto; /* Enable scrolling if needed */
+}
+
+.modal-content {
+  padding-top: 50px;
+  margin: auto;
+  display: block;
+  max-width: 80%; /* Adjust max-width as needed */
+  max-height: 80vh; /* Adjust max-height as needed */
+}
+
+/* Ensure modal image has a fixed size */
+.modal-content img {
+  width: 100%; /* Set width to 100% of modal content */
+  max-height: 80vh; /* Set a maximum height for responsive display */
+  object-fit: contain; /* Maintain aspect ratio and fit within the container */
+}
+
+
+.close {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+#caption {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
